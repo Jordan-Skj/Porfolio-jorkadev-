@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+:root {
+  --bg: #0a0e1a;
+  --small_text: 0.875rem;
+  --normal_text: 1rem;
+  --xl_text: 1.25rem;
+  --Sxl_text: 1.5rem;
+  --Mxl_text: 1.75rem;
+  --Xxl_text: 2rem;
+  --title: "Space Grotesk", sans-serif;
+  --white:#fff;
+  --color-sub:#38bdf8;
+  --secondery-color:#7c3aed;
+  --main-color:#6b7fa3;
+  --second-bg:#111827;
+
+
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  max-width: 500px;
+  min-width: 320px;
+  padding: 20px 30px;
+  margin: auto;
+  text-align: center;
+}
+
+h6 {
+  color: var(--color-sub);
+  padding-bottom: 20px;
+  font-size: var(--small_text);
+}
+
+.h1,
+h2 {
+  color: var(--secondery-color);
+  font-family: var(--title);
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: var(--main-color);
+  padding-top: 20px;
+  font-size: var(--normal_text);
+}
+
+section {
+  padding-top: 100px;
+}
+
+/* ======================== Navbar section =============================== */
+header {
+}
+
+/* ========================= Hero section ========================= */
+
+.hero {
+  height: 100vh;
+  padding-top: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: auto;
+  padding-top: 25px;
+  font-size: var(--Xxl_text);
+  color: var(--white);
+  font-weight: 700;
+}
+
+.subtitle-hero {
+  padding-top: 20px;
+  font-weight: 400;
+  text-align: center;
+  width: 35ch;
+  margin: auto;
+}
+
+button {
+  margin-top: 20px;
+  width: 308px;
+  height: 38px;
+  border-radius: 20px;
+  background-color: var(--secondery-color);
+}
+
+button a {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* =============================About us section============================= */
+
+#about {
+  margin: auto;
+  width: 33ch;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+/* ============================ Service ========================================= */
+
+.card {
+  width: 368px;
+  height: 170px;
+  background-color: var(--second-bg);
+  border-radius: 16px;
+  text-align: left;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+svg {
+  padding-bottom: 10px;
+}
+
+#services h2 {
+  padding-bottom: 20px;
+}
+
+.card p {
+  width: 40ch;
+}
+
+/* ==========================Technologie section============================== */
+
+#technologie .card {
+  height: 300px;
+  text-align: center;
+}
+
+/* ================== Portfolio Section ========================= */
+
+h3 {
+  padding-top: 30px;
+}
+
+/* ====================== Call to action section ============================ */
+
+/* ====================== Footer ============================ */
+
+footer {
+  background-color:;
+}
