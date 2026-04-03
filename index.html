@@ -4,24 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  
+  <title>JorkaDev | Création de sites internet pour entreprises & indépendants</title>
+  <meta name="description" content="Jourdain Shongo (JorkaDev), développeur web spécialisé en sites vitrines et e-commerce rapides et élégants. Boostez votre activité locale avec un site pro.">
+  <meta name="keywords" content="développeur web, création site internet, portfolio, JorkaDev, Jourdain Shongo, site vitrine, e-commerce">
+  <meta name="author" content="Jourdain Shongo">
+
+  <meta property="og:title" content="JorkaDev - Votre partenaire digital">
+  <meta property="og:description" content="Je crée des sites internet rapides et faciles à utiliser pour booster votre activité.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jordan-skj.github.io/ton-depot/"> <meta property="og:image" content="homm.png"> <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
- <style>
-    /* Logique d'affichage du menu mobile */
-    #menu-toggle:checked ~ #mobile-overlay {
-      transform: translateX(0) !important;
-      opacity: 1 !important;
-      pointer-events: auto !important;
-    }
-    
-    /* Empêcher le scroll quand le menu est ouvert */
-    body:has(#menu-toggle:checked) {
-      overflow: hidden;
-    }
-  </style>
+
 
 <body data-theme="synthwave">
   <!-- ============= Navbar ============================ -->
@@ -33,13 +29,13 @@
       <a href="#" class="text-xl font-black">JorkaDev</a>
     </div>
 
-    <div class="navbar-center hidden lg:flex">
+<!--  <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1 font-medium gap-2">
         <li><a href="#services">Services</a></li>
         <li><a href="#technologie">Technologie</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
       </ul>
-    </div>
+    </div>-->
 
     <div class="navbar-end gap-2">
       <a href="#contact" class="btn btn-neutral btn-sm hidden md:flex">Contact</a>
@@ -52,37 +48,7 @@
       </label>
     </div>
 
-    <!-- OVERLAY MOBILE (PLEIN ÉCRAN BLANC) -->
-    <div id="mobile-overlay" class="fixed inset-0 bg-white text-black z-[200] transition-all duration-500 transform translate-x-full opacity-0 pointer-events-none flex flex-col p-8 lg:hidden">
-      <div class="flex justify-between items-center mb-12">
-        <span class="text-gray-400 font-bold uppercase tracking-widest text-sm">Navigation</span>
-        <!-- Bouton Fermer -->
-        <label for="menu-toggle" class="btn btn-ghost btn-circle text-black cursor-pointer">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </label>
-      </div>
 
-      <nav class="flex flex-col gap-8 mb-auto">
-        <a href="#services" onclick="document.getElementById('menu-toggle').checked = false" class="text-5xl font-black hover:text-neutral transition-colors">Services</a>
-        <a href="#technologie" onclick="document.getElementById('menu-toggle').checked = false" class="text-5xl font-black hover:text-neutral transition-colors">Works</a>
-        <a href="#portfolio" onclick="document.getElementById('menu-toggle').checked = false" class="text-5xl font-black hover:text-neutral transition-colors">Portfolio</a>
-        <a href="#contact" onclick="document.getElementById('menu-toggle').checked = false" class="text-5xl font-black text-neutral transition-colors">Contact</a>
-      </nav>
-
-      <div class="mt-auto border-t border-gray-100 pt-8">
-        <p class="text-gray-400 text-sm mb-2 uppercase tracking-widest">Contact</p>
-        <p class="text-xl font-bold mb-1">info@jorkadev.com</p>
-        <p class="text-xl font-bold mb-8">+33 6 00 00 00 00</p>
-        <div class="flex gap-6">
-            <!-- Icones réseaux sociaux (Placeholders) -->
-            <div class="w-8 h-8 bg-black rounded-lg"></div>
-            <div class="w-8 h-8 bg-black rounded-lg"></div>
-            <div class="w-8 h-8 bg-black rounded-lg"></div>
-        </div>
-      </div>
-    </div>
   </header>
 
   <main class="text-center">
@@ -104,12 +70,178 @@
 
     <section class="min-h-screen  ">
       <img src="homm.png" alt="" />
-      <h6 class="text-sm py-5 text-secondary font-bold uppercase tracking-widest">Qui suis-je ?</h6>
-      <h2 class="text-3xl font-bold text-neutral mb-10 text-center">Votre partenaire digital</h2>
+      <h6 class="text-sm py-3 text-secondary font-bold uppercase tracking-widest">Qui suis-je ?</h6>
+      <h2 class="text-2xl font-bold text-neutral mb-10 text-center">Votre partenaire digital</h2>
       <p class="px-4">Développeur Front-End passionné, j'aide les entrepreneurs à briller sur le web. Mon job, c'est de
         rendre
         la technologie invisible pour que vos clients ne voient qu'une seule chose : la qualité de vos services.
       </p>
+    </section>
+
+    <!-- =====================Services section ================== -->
+
+    <section id="services" class="min-h-screen flex flex-col items-center justify-center py-20">
+    <div class="w-full max-w-2xl px-4 flex flex-col items-center">
+        
+        <!-- En-têtes de section -->
+        <h6 class="text-sm py-2 text-secondary font-bold uppercase tracking-widest text-center">Services</h6>
+        <h2 class="text-2xl font-bold text-neutral mb-12 text-center">Ce que je fais pour vous</h2>
+
+        <!-- Conteneur des cartes : flex-col pour les empiler, gap-6 pour l'espace, w-full pour qu'elles s'adaptent -->
+        <div class="flex flex-col gap-6 w-full">
+
+            <!-- CARTE 1 -->
+            <div class="card w-full bg-base-200 shadow-xl border border-white/5">
+                <!-- card-body englobe TOUT le contenu. items-start et text-left forcent l'alignement à gauche -->
+                <div class="card-body items-start text-left p-8">
+                    <div class="mb-4">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.78036 22.638C3.62757 22.2264 3.62757 21.7737 3.78036 21.3621C5.26848 17.7538 7.79448 14.6686 11.0381 12.4977C14.2817 10.3268 18.0969 9.16785 22 9.16785C25.9031 9.16785 29.7183 10.3268 32.9619 12.4977C36.2056 14.6686 38.7316 17.7538 40.2197 21.3621C40.3725 21.7737 40.3725 22.2264 40.2197 22.638C38.7316 26.2463 36.2056 29.3315 32.9619 31.5024C29.7183 33.6733 25.9031 34.8323 22 34.8323C18.0969 34.8323 14.2817 33.6733 11.0381 31.5024C7.79448 29.3315 5.26848 26.2463 3.78036 22.638Z" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M22 27.5C25.0376 27.5 27.5 25.0376 27.5 22C27.5 18.9624 25.0376 16.5 22 16.5C18.9624 16.5 16.5 18.9624 16.5 22C16.5 25.0376 18.9624 27.5 22 27.5Z" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title text-xl text-white mb-2">Votre vitrine pro 24h/24</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Attirez la confiance de vos prospects avec un design unique qui valorise votre expertise et vous démarque de la concurrence.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CARTE 2 -->
+            <div class="card w-full bg-base-200 shadow-xl border border-white/5">
+                <div class="card-body items-start text-left p-8">
+                    <div class="mb-4">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M29.3333 18.3334C29.3333 20.2783 28.5607 22.1436 27.1854 23.5188C25.8101 24.8941 23.9449 25.6667 22 25.6667C20.055 25.6667 18.1898 24.8941 16.8145 23.5188C15.4392 22.1436 14.6666 20.2783 14.6666 18.3334" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5.68884 11.0624H38.3112" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.23333 10.0228C5.75732 10.6575 5.5 11.4294 5.5 12.2228V36.6666C5.5 37.6391 5.88631 38.5717 6.57394 39.2594C7.26158 39.947 8.19421 40.3333 9.16667 40.3333H34.8333C35.8058 40.3333 36.7384 39.947 37.4261 39.2594C38.1137 38.5717 38.5 37.6391 38.5 36.6666V12.2228C38.5 11.4294 38.2427 10.6575 37.7667 10.0228L34.1 5.13329C33.7585 4.67791 33.3156 4.30829 32.8064 4.05373C32.2973 3.79916 31.7359 3.66663 31.1667 3.66663H12.8333C12.2641 3.66663 11.7027 3.79916 11.1936 4.05373C10.6844 4.30829 10.2415 4.67791 9.9 5.13329L6.23333 10.0228Z" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title text-xl text-white mb-2">Encaissez vos premières commandes</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Transformez vos abonnés en acheteurs. Une boutique mobile ultra-rapide et sécurisée, conçue pour maximiser vos ventes sans effort.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CARTE 3 -->
+            <div class="card w-full bg-base-200 shadow-xl border border-white/5">
+                <div class="card-body items-start text-left p-8">
+                    <div class="mb-4">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M36.6667 23.8333C36.6667 33 30.25 37.5833 22.6234 40.2417C22.224 40.377 21.7902 40.3705 21.395 40.2233C13.75 37.5833 7.33337 33 7.33337 23.8333V11C7.33337 10.5138 7.52653 10.0474 7.87035 9.70363C8.21416 9.35981 8.68048 9.16666 9.16671 9.16666C12.8334 9.16666 17.4167 6.96666 20.6067 4.17999C20.9951 3.84815 21.4892 3.66583 22 3.66583C22.5109 3.66583 23.005 3.84815 23.3934 4.17999C26.6017 6.98499 31.1667 9.16666 34.8334 9.16666C35.3196 9.16666 35.7859 9.35981 36.1297 9.70363C36.4736 10.0474 36.6667 10.5138 36.6667 11V23.8333Z" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16.5 22L20.1667 25.6666L27.5 18.3333" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title text-xl text-white mb-2">Je gère tout pour vous</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Oubliez la technique. De l'achat du nom de domaine à la mise en ligne, je livre votre site prêt à l'emploi. Vous n'avez qu'à valider.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CARTE 4 -->
+            <div class="card w-full bg-base-200 shadow-xl border border-white/5">
+                <div class="card-body items-start text-left p-8">
+                    <div class="mb-4">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 36.6667V40.3333" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M22 3.66666V7.33332" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M31.1666 36.6667V40.3333" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M31.1666 3.66666V7.33332" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3.66663 22H7.33329" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3.66663 31.1667H7.33329" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3.66663 12.8333H7.33329" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M36.6666 22H40.3333" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M36.6666 31.1667H40.3333" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M36.6666 12.8333H40.3333" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12.8334 36.6667V40.3333" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12.8334 3.66666V7.33332" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M33 7.33334H11C8.975 7.33334 7.33337 8.97497 7.33337 11V33C7.33337 35.0251 8.975 36.6667 11 36.6667H33C35.0251 36.6667 36.6667 35.0251 36.6667 33V11C36.6667 8.97497 35.0251 7.33334 33 7.33334Z" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M27.5 14.6667H16.5C15.4874 14.6667 14.6666 15.4875 14.6666 16.5V27.5C14.6666 28.5125 15.4874 29.3333 16.5 29.3333H27.5C28.5125 29.3333 29.3333 28.5125 29.3333 27.5V16.5C29.3333 15.4875 28.5125 14.6667 27.5 14.6667Z" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title text-xl text-white mb-2">Evolution & Support : Un site toujours à jour</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Votre site ne sera jamais obsolète. J'assure le suivi technique et l'ajout de nouvelles fonctionnalités pour que vous restiez performant.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- =====================Technologie section ================== -->
+
+<section id="technologie" class="min-h-screen flex flex-col items-center justify-center py-20">
+    <div class="w-full max-w-2xl px-4 flex flex-col items-center">
+        
+        <!-- En-têtes de section -->
+        <h6 class="text-sm py-2 text-secondary font-bold uppercase tracking-widest text-center">Technologie</h6>
+        <h2 class="text-2xl font-bold text-neutral mb-4 text-center">Ma boîte à outils</h2>
+        <p class="text-slate-400 text-center mb-12">Des technologies modernes pour un site rapide, sécurisé et évolutif.</p>
+
+        <!-- Conteneur des cartes -->
+        <div class="flex flex-col gap-8 w-full">
+
+            <!-- CARTE 1 : HTML & CSS -->
+            <div class="card w-full bg-base-200 shadow-xl border border-white/5">
+                <!-- items-center et text-center pour le style "Logo-Focus" de vos captures -->
+                <div class="card-body items-center text-center p-10">
+                    <div class="mb-6 flex gap-6">
+                        <!-- Taille agrandie (h-20) pour un aspect massif comme sur l'image -->
+                        <svg class="h-20 w-auto" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.8748 27.4219L28.0881 118.746L64.9441 128.579L101.903 118.932L110.125 27.4219H19.8748ZM93.0414 48.2127L92.5265 54.1379L92.3 56.875H49.0658L50.0987 69.0625H91.2722L90.9969 71.3284L88.3411 100.689L88.1461 102.405L65 108.635V108.63L64.9726 108.642L41.8397 102.634L40.2695 85.3125H51.612L52.4154 93.9047L64.9939 97.0927L65 96.8551V96.8673L77.6059 94.1769L78.9222 80.2344H39.7648L36.988 48.9166L36.7169 45.7031H93.3116L93.0414 48.2127ZM28.3928 1.65242H34.1026V7.29523H39.327V1.65242H45.0379V18.7373H39.327V13.0163H34.1037V18.7373H28.3928V1.65242ZM52.5464 7.31859H47.5191V1.65242H63.2866V7.31859H58.2573V18.7373H52.5464V7.31859ZM65.7891 1.65242H71.7427L75.4061 7.65578L79.0654 1.65242H85.022V18.7373H79.3335V10.269L75.4061 16.3434H75.3066L71.3761 10.269V18.7373H65.7881L65.7891 1.65242ZM87.8648 1.65242H93.5766V13.0904H101.607V18.7383H87.8648V1.65242Z" fill="#7C3AED" />
+                        </svg>
+                        <svg class="h-20 w-auto" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.9773 26.4062L28.1724 118.313L64.9441 128.52L101.818 118.3L110.023 26.4062H19.9773ZM90.2687 77.6831L87.882 99.9172L87.8911 101.821L65 108.215L64.9817 108.231L41.9077 101.909L40.3467 84.2969H51.6617L52.4641 93.1998L65.004 96.5463L65 96.5616V96.5291L77.5876 92.9795L78.916 78.2031H52.6042L52.3788 75.8113L51.8649 70.0761L51.5957 67.0312H79.9175L80.9473 55.8594H37.8107L37.5842 53.2299L37.0703 47.1057L36.8011 43.6719H93.2668L92.9957 47.058L90.2687 77.6831ZM90.3906 14.5986L83.1299 6.09375H90.3906V1.01562H74.1406V5.4468L82.6617 13.2031H74.1406V18.2812H90.3906V14.5986ZM71.0937 14.5986L64.1803 6.09375H71.0937V1.01562H55.8593V5.4468L63.7132 13.2031H55.8593V18.2812H71.0937V14.5986ZM52.8125 13.2031H44.6875V6.09375H52.8125V1.01562H38.5937V18.2812H52.8125V13.2031Z" fill="#7C3AED" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title text-2xl text-white mb-3">Structure & Design</h3>
+                    <p class="text-slate-400 leading-relaxed max-w-md">
+                        Des fondations robustes et un design soigné pour garantir une expérience parfaite à vos clients, peu importe leur appareil.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CARTE 2 : JS -->
+            <div class="card w-full bg-base-200 shadow-xl border border-white/5">
+                <div class="card-body items-center text-center p-10">
+                    <div class="mb-6">
+                        <svg class="h-20 w-auto" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 1V126H127V1H2ZM68.119 107.513C66.274 111.262 62.752 113.725 58.671 114.914C52.4 116.354 46.402 115.533 41.94 112.855C38.954 111.023 36.622 108.203 35.039 104.954L44.559 99.124C44.642 99.159 44.892 99.611 45.226 100.195C46.44 102.229 47.487 103.669 49.545 104.68C51.567 105.37 56.006 105.811 57.72 102.253C58.767 100.443 58.434 94.625 58.434 88.188C58.433 78.073 58.48 68 58.48 58H70.189C70.189 69 70.249 79.418 70.189 90.152C70.214 96.732 70.785 102.598 68.119 107.513ZM116.693 104.205C112.623 118.127 89.931 118.579 80.863 109.381C78.947 107.216 77.746 106.085 76.603 103.586C81.422 100.814 81.422 100.814 86.111 98.101C88.658 102.016 91.013 104.169 95.25 105.05C100.998 105.752 106.781 103.777 105.484 97.672C104.151 92.686 93.714 91.473 86.611 86.141C79.4 81.298 77.71 69.53 83.636 62.806C85.611 60.319 88.979 58.463 92.513 57.571L96.201 57.094C103.282 56.951 107.708 58.821 110.957 62.449C111.861 63.365 112.599 64.353 113.979 66.494C110.207 68.898 110.219 68.875 104.816 72.373C103.662 69.887 101.747 68.327 99.723 67.649C96.581 66.697 92.619 67.732 91.797 71.052C91.512 72.075 91.571 73.027 92.024 74.717C93.297 77.62 97.569 78.882 101.401 80.643C112.432 85.117 116.157 89.914 117.073 95.624C117.955 100.54 116.86 103.729 116.693 104.205Z" fill="#7C3AED" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title text-2xl text-white mb-3">Interactivité</h3>
+                    <p class="text-slate-400 leading-relaxed max-w-md">
+                        J'ajoute de l'intelligence et du mouvement à vos pages pour offrir une expérience utilisateur moderne et mémorable.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CARTE 3 : FIGMA -->
+            <div class="card w-full bg-base-200 shadow-xl border border-white/5">
+                <div class="card-body items-center text-center p-10">
+                    <div class="mb-6">
+                        <svg class="h-20 w-auto" viewBox="0 0 86 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.5 129C33.4 129 43 119.4 43 107.5V86H21.5C9.6 86 0 95.6 0 107.5C0 119.4 9.6 129 21.5 129ZM0 64.5C0 52.6 9.6 43 21.5 43H43V86H21.5C9.6 86 0 76.4 0 64.5ZM0 21.5C0 9.6 9.6 0 21.5 0H43V43H21.5C9.6 43 0 33.4 0 21.5ZM43 0H64.5C76.4 0 86 9.6 86 21.5C86 33.4 76.4 43 64.5 43H43V0ZM86 64.5C86 76.4 76.4 86 64.5 86C52.6 86 43 76.4 43 64.5C43 52.6 52.6 43 64.5 43C76.4 43 86 52.6 86 64.5Z" fill="#7C3AED" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title text-2xl text-white mb-3">Conception & Design</h3>
+                    <p class="text-slate-400 leading-relaxed max-w-md">
+                        Visualisez votre futur site avant même sa construction. Je crée des prototypes interactifs pour tester et valider chaque détail avec vous.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section class="mt-20" id="porfolio">
+      <h6 class="text-sm py-5 text-secondary font-bold uppercase tracking-widest">Port      </p>
     </section>
 
     <!-- =====================Services section ================== -->
