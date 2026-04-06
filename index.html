@@ -23,44 +23,62 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
 
 <body data-theme="synthwave">
     <!-- ============= Navbar ============================ -->
+
     <header class="navbar sticky top-0 z-[100] bg-base-100/80 backdrop-blur-md px-4 md:px-8">
-        <!-- La checkbox doit être ici pour le sélecteur CSS -->
-        <input type="checkbox" id="menu-toggle" class="hidden" />
-
         <div class="navbar-start">
-            <a href="#" class="text-xl font-black">JorkaDev</a>
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="-1"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li><a href="">A propos</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Technologies</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost text-xl">JorkaDev</a>
         </div>
-
-        <!--  <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1 font-medium gap-2">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#technologie">Technologie</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-      </ul>
-    </div>-->
-
-        <div class="navbar-end gap-2">
-            <a href="#contact" class="btn btn-neutral btn-sm hidden md:flex">Contact</a>
-
-            <!-- Bouton Menu Mobile -->
-            <label for="menu-toggle"
-                class="btn btn-ghost btn-square lg:hidden flex items-center justify-center cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
-                </svg>
-            </label>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="">A propos</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Technologies</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
         </div>
-
-
+        <div class="navbar-end">
+            <a class="btn btn-neutral">Contact</a>
+        </div>
     </header>
 
+
     <main class="text-center">
+
+        <!-- Bouton Flottant -->
+        <div class="fab">
+            <button class="btn btn-lg btn-circle btn-neutral "><a href="#"><svg width="50px" height="50px"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                        class="size-6">
+
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 3C12.2652 3 12.5196 3.10536 12.7071 3.29289L19.7071 10.2929C20.0976 10.6834 20.0976 11.3166 19.7071 11.7071C19.3166 12.0976 18.6834 12.0976 18.2929 11.7071L13 6.41421V20C13 20.5523 12.5523 21 12 21C11.4477 21 11 20.5523 11 20V6.41421L5.70711 11.7071C5.31658 12.0976 4.68342 12.0976 4.29289 11.7071C3.90237 11.3166 3.90237 10.6834 4.29289 10.2929L11.2929 3.29289C11.4804 3.10536 11.7348 3 12 3Z"
+                            fill="currentColor" />
+                    </svg></a></button>
+        </div>
 
         <!-- ============== Hero Section ===================== -->
         <section class="hero min-h-screen">
@@ -70,7 +88,8 @@
                             class="text-neutral">travaille pour vous</span></h1>
                     <p class="py-6">Jourdain Shongo <br> Je crée des sites internet rapides, élégants et faciles à
                         utiliser pour booster votre activité locale.</p>
-                    <a href="#" class="btn btn-neutral btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">On discute de votre projet ?</a>
+                    <a href="#" class="btn btn-neutral btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">On discute de
+                        votre projet ?</a>
                 </div>
             </div>
         </section>
@@ -310,8 +329,8 @@
             </div>
         </section>
 
-      
-<!-- PORTFOLIO -->
+
+        <!-- PORTFOLIO -->
         <section class="mt-20" id="porfolio">
             <h6 class="text-sm py-5 text-secondary font-bold uppercase tracking-widest">Portfolio</h6>
             <h2 class="text-3xl font-bold text-neutral mb-10 text-center">Un aperçu de mon savoir-faire</h2>
@@ -333,11 +352,13 @@
                     l'outil qui fera décoller votre activité.
                 </p>
 
-                <a href="https://wa.me/votre_numero"
+                <a href="https://wa.me/+243995659766"
                     class="btn btn-neutral btn-lg rounded-full px-10 shadow-lg shadow-neutral/20 hover:scale-105 transition-transform">
-                    <svg class="w-6 h-6 mr-2 fill-current" viewBox="0 0 24 24">
+                    <svg aria-label="Whatsapp icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 448 512">
+                        <!--!Font Awesome  Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
                         <path
-                            d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.284l-.582 2.125 2.185-.573c.945.514 1.947.897 3.146.897 3.181 0 5.768-2.587 5.768-5.766 0-3.18-2.587-5.733-5.768-5.733zm3.384 8.221c-.142.401-.708.736-1.163.78-.451.044-.891.044-1.3-.085-.252-.079-.589-.187-1.151-.431-2.378-1.026-3.916-3.414-4.035-3.571-.118-.158-.962-1.277-.962-2.438 0-1.161.609-1.73.824-1.968.216-.239.467-.298.623-.298.157 0 .313.003.447.01.141.008.331-.053.518.396.188.449.645 1.57.701 1.685.056.115.093.249.017.4-.076.151-.115.245-.226.375-.112.13-.235.291-.336.39-.111.11-.228.23-.098.452.13.222.576.953 1.238 1.541.854.759 1.572 1.008 1.83 1.134.258.126.408.105.56-.067.152-.172.647-.751.819-1.006.173-.255.346-.214.582-.126.236.088 1.5.707 1.758.837.258.13.43.195.493.303.064.108.064.623-.078 1.024z" />
+                            d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
                     </svg>
                     Discuter sur WhatsApp
                 </a>
@@ -366,14 +387,16 @@
                         </path>
                     </svg>
                 </a>
-                <a href="https://www.linkedin.com/in/jorka-shongo-702806400" class="btn btn-circle btn-outline btn-secondary hover:scale-110 transition-transform">
+                <a href="https://www.linkedin.com/in/jorka-shongo-702806400"
+                    class="btn btn-circle btn-outline btn-secondary hover:scale-110 transition-transform">
                     <svg fill="#000000" width="800px" height="800px" viewBox="0 -0.5 25 25"
                         xmlns="http://www.w3.org/2000/svg" class="fill-current">
                         <path
                             d="m12.301 0h.093c2.242 0 4.34.613 6.137 1.68l-.055-.031c1.871 1.094 3.386 2.609 4.449 4.422l.031.058c1.04 1.769 1.654 3.896 1.654 6.166 0 5.406-3.483 10-8.327 11.658l-.087.026c-.063.02-.135.031-.209.031-.162 0-.312-.054-.433-.144l.002.001c-.128-.115-.208-.281-.208-.466 0-.005 0-.01 0-.014v.001q0-.048.008-1.226t.008-2.154c.007-.075.011-.161.011-.249 0-.792-.323-1.508-.844-2.025.618-.061 1.176-.163 1.718-.305l-.076.017c.573-.16 1.073-.373 1.537-.642l-.031.017c.508-.28.938-.636 1.292-1.058l.006-.007c.372-.476.663-1.036.84-1.645l.009-.035c.209-.683.329-1.468.329-2.281 0-.045 0-.091-.001-.136v.007c0-.022.001-.047.001-.072 0-1.248-.482-2.383-1.269-3.23l.003.003c.168-.44.265-.948.265-1.479 0-.649-.145-1.263-.404-1.814l.011.026c-.115-.022-.246-.035-.381-.035-.334 0-.649.078-.929.216l.012-.005c-.568.21-1.054.448-1.512.726l.038-.022-.609.384c-.922-.264-1.981-.416-3.075-.416s-2.153.152-3.157.436l.081-.02q-.256-.176-.681-.433c-.373-.214-.814-.421-1.272-.595l-.066-.022c-.293-.154-.64-.244-1.009-.244-.124 0-.246.01-.364.03l.013-.002c-.248.524-.393 1.139-.393 1.788 0 .531.097 1.04.275 1.509l-.01-.029c-.785.844-1.266 1.979-1.266 3.227 0 .025 0 .051.001.076v-.004c-.001.039-.001.084-.001.13 0 .809.12 1.591.344 2.327l-.015-.057c.189.643.476 1.202.85 1.693l-.009-.013c.354.435.782.793 1.267 1.062l.022.011c.432.252.933.465 1.46.614l.046.011c.466.125 1.024.227 1.595.284l.046.004c-.431.428-.718 1-.784 1.638l-.001.012c-.207.101-.448.183-.699.236l-.021.004c-.256.051-.549.08-.85.08-.022 0-.044 0-.066 0h.003c-.394-.008-.756-.136-1.055-.348l.006.004c-.371-.259-.671-.595-.881-.986l-.007-.015c-.198-.336-.459-.614-.768-.827l-.009-.006c-.225-.169-.49-.301-.776-.38l-.016-.004-.32-.048c-.023-.002-.05-.003-.077-.003-.14 0-.273.028-.394.077l.007-.003q-.128.072-.08.184c.039.086.087.16.145.225l-.001-.001c.061.072.13.135.205.19l.003.002.112.08c.283.148.516.354.693.603l.004.006c.191.237.359.505.494.792l.01.024.16.368c.135.402.38.738.7.981l.005.004c.3.234.662.402 1.057.478l.016.002c.33.064.714.104 1.106.112h.007c.045.002.097.002.15.002.261 0 .517-.021.767-.062l-.027.004.368-.064q0 .609.008 1.418t.008.873v.014c0 .185-.08.351-.208.466h-.001c-.119.089-.268.143-.431.143-.075 0-.147-.011-.214-.032l.005.001c-4.929-1.689-8.409-6.283-8.409-11.69 0-2.268.612-4.393 1.681-6.219l-.032.058c1.094-1.871 2.609-3.386 4.422-4.449l.058-.031c1.739-1.034 3.835-1.645 6.073-1.645h.098-.005zm-7.64 17.666q.048-.112-.112-.192-.16-.048-.208.032-.048.112.112.192.144.096.208-.032zm.497.545q.112-.08-.032-.256-.16-.144-.256-.048-.112.08.032.256.159.157.256.047zm.48.72q.144-.112 0-.304-.128-.208-.272-.096-.144.08 0 .288t.272.112zm.672.673q.128-.128-.064-.304-.192-.192-.32-.048-.144.128.064.304.192.192.32.044zm.913.4q.048-.176-.208-.256-.24-.064-.304.112t.208.24q.24.097.304-.096zm1.009.08q0-.208-.272-.176-.256 0-.256.176 0 .208.272.176.256.001.256-.175zm.929-.16q-.032-.176-.288-.144-.256.048-.224.24t.288.128.225-.224z" />
                     </svg>
                 </a>
-                <a href="https://github.com/Jordan-Skj" class="btn btn-circle btn-outline btn-secondary hover:scale-110 transition-transform">
+                <a href="https://github.com/Jordan-Skj"
+                    class="btn btn-circle btn-outline btn-secondary hover:scale-110 transition-transform">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                         class="fill-current">
                         <path
